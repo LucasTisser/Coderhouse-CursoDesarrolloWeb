@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Roboto:wght@100&display=swap");
+
+/* font-family: 'Barlow', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+.jumbotron {
+  background-image: url(../img/fondo.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  margin: 0;
+  border-radius: 0;
+}
+
+h1 {
+  color: orange;
+  text-shadow: 0 0 5px #222;
+  font-size: 50px;
+}
+
+.jumbotron p {
+  color: #fff;
+  font-size: 30px;
+}
+
+.nav-link {
+  color: #222 !important ;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 15px;
+  font-family: "Barlow", sans-serif;
+}
+
+.n-left {
+  height: 500px;
+  background-color: orange;
+}
+.n-left p {
+  color: #fff;
+  padding: 20px;
+  text-align: justify;
+}
+h3 {
+  color: #222;
+  font-family: "roboto", "sans serif";
+}
+.n-right {
+  height: 500px;
+  background-color: #333;
+}
+
+.n-right img {
+  width: 80%;
+}

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+header {
+  background-color: orange;
+  width: 100%;
+  height: 150px;
+}
+
+p {
+  float: left;
+  width: 25%;
+  background-color: black;
+  font-size: 25px;
+  color: blanchedalmond;
+  height: 80px;
+}
+
+.naranja {
+  color: orange;
+}
+
+nav {
+  float: right;
+  width: 75%;
+  background-color: black;
+  height: 80px;
+}
+
+nav ul li {
+  list-style: none; /* elimina las viñetas */
+  display: inline; /* acomoda el contenido horizontalmente */
+  font-size: 25px;
+  margin: 20px;
+}
+
+nav a {
+  color: blanchedalmond;
+  text-decoration: none; /* elimina los subrayado del enlace */
+  margin-left: 50px;
+}
+
+nav a:hover {
+  /* etiqueta con pseudoclase que hace que cuando se posicione el cursor se cambie el aspecto del elemento */
+  color: orange;
+}
+
+.fondo {
+  height: 400px;
+  width: 100%;
+  background-image: url(pizza.jpg);
+  background-size: cover;
+  text-align: center;
+  color: black;
+  /* line-height: 600px; */
+  font-size: 60px;
+}
+
+h2 {
+  text-align: center;
+  background-color: orange;
+}
+
+.sec {
+  height: 600px;
+  width: 100%;
+  background-color: #333;
+  display: flex; /* indico que los hijos de sect van a ser "flexibles" */
+  flex-direction: row; /* flex-direction define las direcciones y contiene 4 valores posibles:
+                                                                row (se veran los elementos en fila)
+                                                                row-reverse (se veran los elementos en fila, pero en sentido contrario)
+                                                                column (indico que se veran uno debajo del otro)
+                                                                column-reverse (indico que se veran uno debajo del otro en sentido contrario) */
+
+  flex-wrap: wrap-reverse; /* flex-wrap contiene los siguientes valores posibles:
+                                                                                    nowrap (por defecto)
+                                                                                    flex-flow: row wrap;
+                                                                                    wrap (cuando los elementos no entran en el contenedor los acomoda y los envia una linea abajo)
+                                                                                    wrap-reverse (cuando los elementos no entran en el contenedor los acomoda y los envia una linea abajo en sentido contrario) */
+
+  /* con flex-flow indico valores para flex-wrap y flex-direction, es una abreviatura de ambas */
+
+  justify-content: space-evenly; /* con justify-content voy a alinear los elementos en el eje x, estan los siguientes valores:
+                                                                center (centra los elementos dentro del contenedor)
+                                                                flex-end (ajusta los elementos a la derecha);
+                                                                flex-start (ajusta los elementos a la izquierda)
+                                                                space-around (cada elemento tiene un margen por igual)
+                                                                space-between (genera espacios por igual pero pegados al margen)
+                                                                space-evenly (genera espacios por igual); */
+
+  align-items: baseline; /* con align-items voy a alinear los elementos en el eje y, estan los siguientes valores :
+                                                                center (coloca los elementos en el centro)
+                                                                flex-start (coloca los elementos en el eje y superior);
+                                                                flex-end (coloca los elementos en el eje y inferior)
+                                                                baseline (genera una linea imaginaria en cuanto al texto, logrando modificar los items)
+                                                                stretch (estira en relacion al eje vertical); */
+
+  align-content: center; /* con align-content voy a alinear de manera general al contenido, estan los siguientes valores:
+                                                                center (alinea todo el contenido en el centro)
+                                                                flex-end (coloca todo el contenido en la parte inferior)
+                                                                flex-start (coloca todo el contenido en la parte superior)
+                                                                stretch (estira los elementos de manera igual)
+                                                                space-around (respeta el espaciado en cuanto al contenido)
+                                                                space-between (ubica en la primera linea y en la ultima linea)
+                                                                space-evenly (ubica todos los elementos entre si de igual manera) */
+}
+
+/* seccion1 - inicio */
+.item {
+  height: 120px;
+  width: 120px;
+  background-color: orange;
+  color: blanchedalmond;
+  border: 2px solid blanchedalmond;
+  /* line-height: 120px; */
+  text-align: center;
+}
+
+.item2 {
+  /* line-height: 180px; */
+  order: -2; /* order se utiliza para acomodar los elementos en una medida especifica, de manera que en una recta, el centro es el valor 0, y los valores positivos estaran a la derecha, mientras mas positivo, mas a la derecha estara. y por la izquierda los valores negativos, mientras mas negativo el numero, mas a la izquierda se encontrara */
+
+  flex-basis: 120px; /* con flex-basis le indico un tamaño en relacion al ancho como base */
+  flex-grow: 1; /*con flex-grow le da al elemento un crecimiento de tamaño mas considerado e importante en relacion a los demas elementos */
+  flex-shrink: 2; /* flex-shrink enconje los elementos en relacion a los demas, siempre y cuando no este asignado el flex-wrap */
+}
+
+.item4 {
+  line-height: 50px;
+  order: 0;
+  flex-basis: 120px;
+  /* flex-grow: 4; */
+  flex-shrink: 3;
+}
+/* seccion1 - fin */
+
+/* flexbox */
+
+/*  display: flex  .indicara que sus hijos seran "flexibles"
+    flex-direction  . indicara direccion vertical u horizontal
+    flex-wrap . ¿se hara multilinea cuando llegue al limite?
+    flex-flow . abrevicacion de propiedades
+    justify-content . alinear horizontalmente a los hijos si el padre es "fila" o verticalmente si el padre es "columna".
+    align-items . alinear verticalmente a los hijos (si el padre es "columna")
+    align-content . alinear horizontalmente a los hijos cuando son multilinea */
+
+/*  */
+
+/*scroll-behavior: smooth ( cuando el usuario toca el enlace ancla esto lo lleva mas suavemente a la seccion)  */

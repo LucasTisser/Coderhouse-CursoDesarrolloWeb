@@ -1,0 +1,100 @@
+<h1>enlaces</h1>
+
+<h2>arquitectura del sitio</h2>
+
+<p>
+  los enlaces se utilizan para relacionar partes del documento con otros
+  documentos o con partes del mismo documento.Por defecto se visualiza en azul y
+  subrayado <br />
+
+  Para crear un enlace es necesario utilizar la etiqueta <b>a</b> con el
+  atributo "href",que establecera el destino al que apunta
+</p>
+
+Sintaxis de un enlace: <br />
+
+<a href="productos.html">Productos</a> <br />
+
+El texto "productos", que figura entre las etiquetas <b>a</b>, es el que se
+visualizara en el navegador y que servira como enlace a la url especificada en
+el atributo "href". <br />
+
+<h2>Enlaces relativos, Absolutos e internos.</h2>
+
+<p>
+  <b>Los enlaces relativos</b> son aquellos que apuntan a paginas ubicadas
+  dentro del mismo proyecto.si la pagina referenciada se encuentra en el mismo
+  directrorio alcanza con mencionar el nombre de la misma para generar el
+  enlace, como por ejemplo:
+</p>
+
+<a href="contacto.html">Contacto</a> <br />
+
+en caso de que el archivo se encuentre en un directorio especifico, el mismo
+debera ser mencionado, como en el siguiente ejemplo: <br />
+
+<a href="imagenes/mapa.jpg">ver mapa</a> <br />
+
+en el ejemplo anterior, el destino al cual queremos acceder (en este caso una
+imagen) se encuentra dentro de la carpeta "imagenes". <br />
+
+<p>
+  <b>Los enlaces absolutos</b> son aquellos cuyo destino apunta a un documento
+  que fuera del sitio y debe ser especificado utilizando la url completa
+</p>
+
+<a href="http=//www.coderhouse.com/frontend">Curso de Frontend</a> <br />
+
+<p>
+  Los <b>enlaces internos</b> permiten referenciar secciones de nuestra pagina,
+  para hacer esto se utiliza el id:
+</p>
+
+<a href="#pie">Ir al pie de pagina</a>
+
+...
+
+<footer id="pie"></footer>
+<br />
+
+<p>
+  Tambien podemos usar como destino, una seccion especifica, una pagina distinta
+</p>
+
+<a href="contacto.html#formulario">Formulario de contacto</a>
+
+<p>
+  en el ejemplo anterior el enlace apunta a la seccion que tiene el id
+  formulario, dentro de la pagina "contacto.html" <br />
+
+  No solo podemos agregar enlaces a texto, tambien podemos hacerlo con otros
+  elementos. Por lo general se usan texto o imagenes. ejemplo de enlaces con una
+  imagen:
+</p>
+
+<a href="http://www.coderhouse.com/cursos.html#frontend">
+  <img src="img/logo_coderhouse.png" alt="coderhouse" />
+</a>
+
+<p>
+  en este caso la imagen sera clickeable y enlazara al destino especificado en
+  el atributo "href"
+</p>
+
+<h2>Atributos</h2>
+
+<ul>
+  <li>
+    Atributo Target= Contiene dos valores
+    <ul>
+      <li>
+        <b>_self</b>: se utiliza para clickear en el enlace y envia a otra
+        pagina desde la misma pestaña
+      </li>
+      <li>
+        <b>_blank</b>: se utiliza para clickear en el enlace y envia a otra
+        pagina desde otra pestaña
+      </li>
+    </ul>
+  </li>
+</ul>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hoteles Diamond te ofrece un servicio exelente y de lujo para que puedas descansar confortablemente."
+    />
+    <meta
+      name="keywords"
+      content="Hotel Diamond,Hotel Lujo,Diamond,Hoteles,Hoteles premium"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Hotel Diamond</title>
+  </head>
+
+  <body>
+    <!-- Inicio Header -->
+    <header class="jumbotron-fluid img-fluid">
+      <nav class="navbar navbar-expand-md navbar-dark container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img src="img/diamond.png" alt="ImgLogo" id="img-logo" /> <br />
+          <h6>Hotel Diamond</h6>
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links and Search -->
+        <div
+          class="collapse navbar-collapse nav-space row"
+          id="collapsibleNavbar"
+        >
+          <ul class="navbar-nav col-7 col-lg-5 col-xl-5 ml-md-1 ml-lg-5">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="pages/hoteles.html"
+                >Hoteles</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="pages/servicios.html"
+                >Servicios</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="pages/nosotros.html"
+                >Nosotros</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="pages/contacto.html"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+          <form
+            class="form-inline offset-xl-3 col-xl-3"
+            action="/action_page.php"
+          >
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Search"
+            />
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <div class="text-center">
+        <h1
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+          class="text-white tittle"
+        >
+          Disfruta de tus vacaciones en Hoteles Diamond
+        </h1>
+      </div>
+      <!-- inicio header bottom -->
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        class="text-center header__bottom"
+      >
+        <form action="">
+          <input type="button" value="Reserva ahora" class="btn btn-success" />
+          <input
+            type="button"
+            value="Fechas de estancia"
+            class="btn btn-success"
+          />
+          <label for="mydato"></label>
+          <input
+            type="date"
+            name="mydato"
+            min="2021-11-29"
+            max="2030-12-31"
+            id="mydato"
+          /><br />
+        </form>
+      </div>
+      <!--fin de header bottom-->
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Inicio Main -->
+    <main class="container col-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- inicio de main-top y aside top -->
+      <div class="row justify-content-center">
+        <!-- inicio de main Top -->
+        <div class="main__top mt-4 p-3 col-11 col-md-7 col-lg-7">
+          <div class="text-center">
+            <h1 class="main__title text-center">Aprovecha las Promociones!</h1>
+            <br />
+          </div>
+          <div class="row">
+            <section
+              data-aos="zoom-in"
+              class="main__section box-color1 col-lg-3 col-xl-3 m-4 ml-lg-5 ml-xl-5"
+            >
+              <p>
+                Tu hospedaje cuenta con servicio de desayuno y cena incluido sin
+                cargo.
+              </p>
+            </section>
+            <section
+              data-aos="zoom-in"
+              class="main__section3 box-color2 col-lg-3 col-xl-3 m-4 ml-lg-3 ml-xl-1"
+            >
+              <p>
+                Si el hospedaje es de 2 adultos y 2 niños, obtenes un 10% de
+                descuento por cada dia que te hospedes con nosotros.
+              </p>
+            </section>
+            <section
+              data-aos="zoom-in"
+              class="main__section2 box-color3 col-lg-3 col-xl-3 m-4 ml-lg-1 ml-xl-1"
+            >
+              <p>
+                Abonando en efectivo, se otorgara un descuento del 20% en el
+                total de tu hospedaje.
+              </p>
+            </section>
+          </div>
+        </div>
+        <!-- fin de main Top-->
+
+        <!-- inicio aside top -->
+        <div
+          class="aside__top mt-4 p-3 ml-md-4 ml-xl-5 col-11 col-md-4 col-lg-4"
+        >
+          <h3 class="aside__top--title">Comentarios clientes</h3>
+
+          <p class="aside__top--txt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+            fugiat fugit sint dolor facilis molestias.
+          </p>
+          <br />
+
+          <p class="aside__top--txt">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit,
+            esse.
+          </p>
+          <br />
+
+          <p class="aside__top--txt">Lorem ipsum dolor sit amet.</p>
+          <br />
+
+          <form action="" class="aside__top--form">
+            <label for="comentario">Deja tu comentario</label> <br />
+            <textarea
+              class="col-md-12"
+              name="comentario"
+              cols="30"
+              rows="8"
+            ></textarea>
+            <br />
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+        <!-- fin de aside top -->
+      </div>
+      <!-- fin de main-top y aside top -->
+
+      <!-- inicio de main mid y aside mid -->
+      <div class="row justify-content-center">
+        <!-- inicio de main mid -->
+        <div class="main__mid mt-4 p-3 col-11 col-md-7 col-lg-7">
+          <h2 class="main__mid__title">Nuestros hoteles mas importantes</h2>
+          <div class="row">
+            <div
+              data-aos="zoom-in-left"
+              class="hotel1 offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4 col-xl-5 mt-5 ml-sm-4"
+            >
+              <p class="main__mid--font hotel1Texto col-sm-12">
+                Rio de Janeiro, Brasil
+              </p>
+            </div>
+            <div
+              data-aos="zoom-in-left"
+              class="hotel2 offset-1 offset-sm-0 col-10 col-sm-4 col-lg-7 col-xl-3 mt-5 ml-sm-4"
+            >
+              <p class="main__mid--font hotel2Texto">Buenos Aires,Argentina</p>
+            </div>
+            <div
+              data-aos="zoom-in-left"
+              class="hotel3 offset-1 offset-sm-2 col-10 col-sm-8 col-lg-7 col-xl-3 offset-lg-0 mt-5 ml-lg-4"
+            >
+              <p class="main__mid--font">Cancun, Mexico</p>
+            </div>
+            <div
+              data-aos="zoom-in-left"
+              class="hotel4 offset-1 offset-sm-0 col-10 col-sm-4 col-lg-4 col-xl-3 mt-5 ml-sm-4"
+            >
+              <p class="main__mid--font">Paris, Francia</p>
+            </div>
+            <div
+              data-aos="zoom-in-left"
+              class="hotel5 offset-1 offset-sm-0 col-10 col-sm-6 col-lg-4 col-xl-3 mt-5 ml-sm-4"
+            >
+              <p class="main__mid--font">Madrid, España</p>
+            </div>
+            <div
+              data-aos="zoom-in-left"
+              class="hotel6 offset-1 offset-sm-2 col-10 col-sm-8 col-lg-7 col-xl-5 offset-lg-0 mt-5 ml-lg-4"
+            >
+              <p class="main__mid--font">Amsterdam, Holanda</p>
+            </div>
+            <div
+              data-aos="zoom-in-left"
+              class="hotel7 offset-1 offset-sm-0 col-10 col-sm-6 col-lg-7 col-xl-5 mt-5 ml-sm-4"
+            >
+              <p class="main__mid--font">Londres, Inglaterra</p>
+            </div>
+            <div
+              data-aos="zoom-in-left"
+              class="hotel8 offset-1 offset-sm-0 col-10 col-sm-4 col-lg-4 col-xl-3 mt-5 ml-sm-4"
+            >
+              <p class="main__mid--font">Toronto, Canada</p>
+            </div>
+            <div
+              data-aos="zoom-in-left"
+              class="hotel9 offset-1 offset-sm-2 col-10 col-sm-8 col-lg-10 col-xl-3 offset-lg-1 offset-xl-0 mt-5 ml-xl-4"
+            >
+              <p class="main__mid--font">Berlin, alemania</p>
+            </div>
+          </div>
+        </div>
+        <!-- fin de main mid -->
+
+        <!-- inicio de aside mid -->
+
+        <div class="p-3 mt-2 ml-md-4 ml-xl-5 col-11 col-md-4 col-lg-4">
+          <div class="row">
+            <div class="aside__mid col-12">
+              <h3 class="aside__mid--title m-1">Como llegar al hotel</h3>
+              <iframe
+                class="aside__mid--map m-4 mt-lg-3 col-11"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1837.4373958746087!2d-43.17762088001474!3d-22.917988625104368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f7d0211b28d%3A0x419abc441d1b443d!2sHotel%20Diamond!5e0!3m2!1ses-419!2sar!4v1638218208910!5m2!1ses-419!2sar"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+
+            <div class="aside__bottom mt-4 m-0 col-12">
+              <h3 class="aside__bottom--title m-3 col-11 text-center">
+                Nuestros servicios
+              </h3>
+
+              <div class="row justify-content-center m-1">
+                <div class="col-6 col-sm-6 col-md-6 col-xl-4 p-2 p-md-1">
+                  <h4
+                    class="aside__bottom--imgtitle1 mt-4 m-xl-0 text-center col-12 col-sm-12 col-xl-12"
+                  >
+                    Desayuno incluido
+                  </h4>
+                  <div
+                    class="aside__bottom1 offset-sm-2 ml-md-0 m-xl-3 col-12 col-sm-7 col-md-12 col-lg-12 col-xl-10"
+                  ></div>
+                </div>
+                <div class="ml-md-0 col-6 col-md-6 col-xl-4 p-2 p-md-1">
+                  <h4
+                    class="aside__bottom--imgtitle2 mt-4 m-xl-0 text-center col-12 col-xl-12"
+                  >
+                    Cena Incluido
+                  </h4>
+                  <div
+                    class="aside__bottom2 ml-1 ml-md-0 m-xl-3 col-12 col-sm-7 col-md-12 col-lg-12 col-xl-10"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center m-1 m-md-0">
+                <div class="col-6 col-md-6 col-xl-4 p-2 p-md-1">
+                  <h4
+                    class="aside__bottom--imgtitle3 mt-4 m-xl-0 text-center col-12 col-xl-12"
+                  >
+                    Limpieza
+                  </h4>
+                  <div
+                    class="aside__bottom3 offset-sm-2 ml-md-0 m-xl-3 col-12 col-sm-7 col-md-12 col-lg-12 col-xl-10"
+                  ></div>
+                </div>
+                <div class="ml-md-0 col-6 col-md-6 col-xl-4 p-2 p-md-1">
+                  <h4
+                    class="aside__bottom--imgtitle4 mt-4 m-xl-0 text-center col-12 col-xl-12"
+                  >
+                    Lavanderia
+                  </h4>
+                  <div
+                    class="aside__bottom4 ml-1 ml-md-0 m-xl-3 col-12 col-sm-7 col-md-12 col-lg-12 col-xl-10"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center m-1 m-md-0">
+                <div class="col-6 col-md-6 col-xl-4 p-2 p-md-1">
+                  <h4
+                    class="aside__bottom--imgtitle5 mt-4 m-xl-0 text-center col-12 col-xl-12"
+                  >
+                    Microondas
+                  </h4>
+                  <div
+                    class="aside__bottom5 offset-sm-3 ml-md-0 m-xl-3 col-12 col-sm-7 col-md-12 col-lg-12 col-xl-10"
+                  ></div>
+                </div>
+                <div class="ml-md-0 col-6 col-md-6 col-xl-4 p-2 p-md-1">
+                  <h4
+                    class="aside__bottom--imgtitle6 mt-4 m-xl-0 text-center col-12 col-xl-12"
+                  >
+                    Tv+Internet
+                  </h4>
+                  <div
+                    class="aside__bottom6 ml-1 ml-md-0 m-xl-3 col-12 col-sm-7 col-md-12 col-lg-12 col-xl-10"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center m-1 m-md-0">
+                <div class="col-6 col-md-6 col-xl-4 p-2 p-md-1">
+                  <h4
+                    class="aside__bottom--imgtitle7 mt-4 m-xl-0 text-center col-12 col-xl-12"
+                  >
+                    Caja Fuerte
+                  </h4>
+                  <div
+                    class="aside__bottom7 offset-sm-2 ml-md-0 m-xl-3 col-12 col-sm-7 col-md-12 col-lg-12 col-xl-10"
+                  ></div>
+                </div>
+                <div class="ml-md-0 col-6 col-md-6 col-xl-4 p-2 p-md-1">
+                  <h4
+                    class="aside__bottom--imgtitle8 mt-4 m-xl-0 text-center col-12 col-xl-12"
+                  >
+                    Atencion 24Hs
+                  </h4>
+                  <div
+                    class="aside__bottom8 offset-sm-2 ml-1 ml-md-0 m-xl-3 col-12 col-sm-7 col-md-12 col-lg-12 col-xl-10"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="row justify-content-center m-1 m-md-0">
+                <div class="col-6 col-md-6 col-xl-4 p-2 p-md-1">
+                  <h4
+                    class="aside__bottom--imgtitle9 mt-4 m-xl-0 text-center col-12 col-xl-12"
+                  >
+                    Habitaciones Premium
+                  </h4>
+                  <div
+                    class="aside__bottom9 offset-sm-2 ml-md-0 m-xl-3 col-12 col-sm-7 col-md-12 col-lg-12 col-xl-10"
+                  ></div>
+                </div>
+                <div class="ml-md-0 col-6 col-md-6 col-xl-4 p-2 p-md-1">
+                  <h4
+                    class="aside__bottom--imgtitle10 mt-4 m-xl-0 text-center col-12 col-xl-12"
+                  >
+                    Cliente satisfecho
+                  </h4>
+                  <div
+                    class="aside__bottom10 offset-sm-2 ml-1 ml-md-0 m-xl-3 col-12 col-sm-7 col-md-12 col-lg-12 col-xl-10"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fin de aside mid -->
+        </div>
+      </div>
+      <!-- fin de main mid y aside mid -->
+
+      <!-- inicio de main mid2 -->
+
+      <div class="row justify-content-center">
+        <div
+          class="main__mid2 mt-4 mr-md-4 ml-xl-0 col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11"
+        >
+          <div class="row">
+            <article
+              class="main__mid2__article ml-3 col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6 ml-sm-3"
+            >
+              <h2 class="main__mid2__article--title text-center pt-4 pb-3">
+                Proba los platillos del mundo
+              </h2>
+              <div
+                id="demo"
+                class="carousel slide col-12"
+                data-aos="zoom-in-left"
+                data-ride="carousel"
+              >
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                  <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="img/food1.jpg"
+                      alt="Comida1"
+                      class="main__mid2__article__img col-12"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/food2.jpg"
+                      alt="Comida2"
+                      class="main__mid2__article__img2 col-12"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/food3.jpg"
+                      alt="Comida3"
+                      class="main__mid2__article__img3 col-12"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="img/food4.jpg"
+                      alt="Comida4"
+                      class="main__mid2__article__img4 col-12"
+                    />
+                  </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+            </article>
+            <article
+              class="main__mid2__article2 ml-3 mt-4 ml-sm-3 mt-md-0 ml-lg-4 mt-lg-0 mb-xl-0 col-11 col-md-5 col-lg-5 col-xl-5"
+            >
+              <h3 class="main___mid2__article2--title text-center">
+                Platos Principales
+              </h3>
+              <div
+                class="row col-10 col-sm-12 col-md-12 col-lg-12 col-xl-12 offset-1 offset-sm-0 offset-md-0 offset-lg-1 offset-xl-1"
+              >
+                <ul
+                  data-aos="zoom-in-left"
+                  class="main___mid2___article2__ul text-center p-3 mt-lg-0 col-12 col-sm-5 col-md-12 col-lg-10"
+                >
+                  <li class="tituloNegro">
+                    Desayuno
+                    <ol class="subList">
+                      <li>Desayuno1</li>
+                      <li>Desayuno2</li>
+                    </ol>
+                  </li>
+                  <li class="tituloNegro">
+                    Almuerzo
+                    <ol class="subList">
+                      <li>Almuerzo1</li>
+                      <li>Almuerzo2</li>
+                    </ol>
+                  </li>
+                  <li class="tituloNegro">
+                    Cena
+                    <ol class="subList">
+                      <li>Cena1</li>
+                      <li>Cena2</li>
+                    </ol>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- fin de main mid2 -->
+
+      <!-- inicio de main bottom -->
+
+      <div class="row justify-content-center mb-4">
+        <div class="main__bottom mt-4 mr-md-4 col-11">
+          <div class="row">
+            <section
+              class="main__bottom__section m-3 mr-md-4 col-11 col-sm-11 col-md-6 col-lg-6"
+            >
+              <h3 class="main__bottom__section--title">Hotel rio de janeiro</h3>
+
+              <article class="main__bottom__section--video">
+                <iframe
+                  class="video mb-2 mt-4 col-12 col-sm-12 col-md-12 col-lg-12"
+                  src="https://www.youtube.com/embed/j_Tupg60dwY"
+                  title="YouTube video player"
+                  frameborder="0"
+                  height="500px"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </article>
+            </section>
+
+            <section
+              class="main__bottom__section2 m-3 ml-md-0 mb-md-3 mt-md-3 mt-lg-3 mb-lg-4 col-11 col-sm-11 col-md-5 col-lg-5"
+            >
+              <h2 class="main__bottom__section2--title mb-lg-4">
+                Nuestra historia
+              </h2>
+
+              <p
+                class="main__bottom__section2--p text-center m-2 col-11 col-sm-11 col-lg-11"
+              >
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure,
+                quasi. Accusamus accusantium, neque, quos tempora dolorem
+                repudiandae aliquam, veritatis libero cumque aperiam quibusdam
+                magnam? Magni placeat et odio facilis nam? Perspiciatis
+                molestias pariatur quam sint! Ullam quo assumenda deserunt
+                officia necessitatibus nisi odio! Harum, reprehenderit deserunt?
+                Nostrum eveniet reprehenderit quos, sunt, optio pariatur ipsam
+                deleniti laboriosam esse tempore ducimus nisi!
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- fin de main bottom -->
+    </main>
+    <!-- Fin Main -->
+
+    <!-- inicio de footer-->
+    <div class="footer">
+      <footer>
+        <div class="footer__content col-12">
+          <div class="footer__content__soport mt-2 col-12 col-md-5">
+            <h4 class="footer__content__soport--title text-center">soporte</h4>
+
+            <ul class="footer__content__soport--list text-center">
+              <li><a href="" class="noLine">Preguntas frecuentes.</a></li>
+              <li><a href="" class="noLine">Nosotros.</a></li>
+              <li><a href="" class="noLine">Politicas de privacidad.</a></li>
+              <li><a href="" class="noLine">Terminos y condciones.</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__content__logos text-center p-2 col-12 col-md-5">
+            <h4 class="footer__content__logos--title text-center">
+              Seguinos en las redes!
+            </h4>
+
+            <div class="d-flex justify-content-around">
+              <a href="https://www.twitter.com/" target="_blank"
+                ><img
+                  src="img/twitter.png"
+                  alt="boton twitter"
+                  class="footer__content__logos--sizeTwitter"
+              /></a>
+
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  src="img/instagram.png"
+                  alt="boton instagram"
+                  class="footer__content__logos--sizeInstagram"
+              /></a>
+
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img
+                  src="img/facebook.png"
+                  alt="boton face"
+                  class="footer__content__logos--sizeFacebook"
+              /></a>
+
+              <a href="https://www.mastercard.com.ar/es-ar.html" target="_blank"
+                ><img
+                  src="img/visa.png"
+                  alt="boton visa"
+                  class="footer__content__logos--sizeVisa"
+              /></a>
+
+              <a
+                href="https://www.americanexpress.com/es-ar/?inav=NavLogo"
+                target="_blank"
+                ><img
+                  src="img/americanExpress.png"
+                  alt="boton americanExpress"
+                  class="footer__content__logos--sizeAmerican"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- fin de footer -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

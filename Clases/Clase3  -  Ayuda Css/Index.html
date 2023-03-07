@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clase03</title>
+        <link rel="stylesheet" href="estilos.css">
+        <style>
+            h2 {
+                color: rgb(0, 0, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Titulo</h2>
+        <!-- Dentro de la etiqueta style en html se puede programar al igual que con un archivo extenso de css -->
+        
+
+        <!-- Tambien se puede colocar el style como atributo de la etiqueta -->
+        <h2 style="color: rgba(255, 5, 5, 0.657);">Esto es un Titulo</h2>
+
+        <h2 style="color: rgba(255, 0, 0, 0.575);">Niveles de jerarquia</h2>
+
+        <p>De los 3 metodos (Archivo externo, etiqueta style y atributo style) El que mas jerarquia posee es el <b style="color:darkblue">atributo style</b> , luego la <b style="background-color: darkkhaki;">Etiqueta style</b> y por ultimo el <b style="color: rgba(255, 0, 0, 0.781);">archivo externo</b>.</p>
+
+        <h2>Atributo class</h2>
+        <div>
+            <p>se utiliza para darle estilos a ciertas partes mas especificas del codigo. <br>
+                Desde css se hace mencion con el nombre del <b style="color: rgb(75, 75, 189);">class</b> que lleve la etiqueta a dar estilo en el HTML, y por delante de su nombre lleva un punto, lo recomnedable es colocar un nombre que haga referencia a los estilos que tendra. Ejemplo: <br>
+                
+                HTML : <img src="" class="bordesredondeados imgchica"> <br>
+                css  : .bordesredondeados { <br>
+                    <!-- estilos css -->
+                } <br>
+                
+                Al agregar dos valores de class separados por un espacio, me permite ser mas especifico con mi codigo para modificarlo mas adelante.
+            </p>
+        </div>
+        <div>
+            <h2>Atributo ID</h2>
+            <p>Generalmente se usa para nombrar porciones de codigo sectores, Es posible ponerle ID a cualquier elemento HTML para darle "nombre". y asi como el ID, todos los elementos tambien aceptan el atributo class="". <br>
+            Dicha clase se utiliza cuando quieres aplicar el mismo estilo a mas de un elemnto, y la busqueda por etiqueta no sirve lograrlo.
+        
+        <h3 style="color: rgba(94, 34, 143, 0.822);">ID desde css</h3>
+            Desde CSS, se puede utilizar cualquier nombre que empiecen con letras, y delante se coloque un numeral (#). Lo recomendable es poner un nombre que haga referencias a los estilos que tendra. por ejemplo: <br>
+            
+            #productos { <br>
+            <!-- Codigo Css -->
+            } <br>
+
+            Para hacer mencion en HTML se coloca el atributo <b style="color: rgb(125, 35, 148);">ID=""</b> en la etiqueta deseada </p>    
+        </div>
+        <div>
+            <h2 class="violet">Id Vs Class</h2>
+
+            <table border="2px" cellspacing="15">
+                <tr>
+                    <th></th>
+                    <th>¿se puede reutilizar su nombre en el HTML?</th>
+                    <th>¿Se puede usar varias veces en un atributo en el HTML?</th>
+                    <th>¿cuando lo uso?</th>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                    <td style="color: orangered;">NO</td>
+                    <td style="color: orangered;">NO</td>
+                    <td>Nombrar secciones, divisiones de codigo</td>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                    <td style="color: green;">SI</td>
+                    <td style="color: green;">SI</td>
+                    <td>Especificar diseño aparte del codigo</td>
+                </tr>
+                <tr>
+                    <th>Ejemplo ID</th>
+                    <td> id="productos" <br>
+                    id="productos2"</td>
+                    <td></td>
+                    <td> " section id="productos" "</td>
+                </tr>
+                <tr>
+                    <th>Ejemplo CLASS</th>
+                    <td> class="bordes" <br>
+                    class="bordes"</td>
+                    <td> class="bordes destacado"</td>
+                    <td> " p class="destacado" "</td>
+                </tr>
+            </table>
+        </div> <br>
+        
+        <h2>Estilos de listas</h2> <br>
+
+        <ul class="imglista">
+            <li>Item1</li>
+            <li>Item2</li>
+            <li>Item3</li>
+            <li>Item4</li>
+            <li>Item5</li>
+        </ul>
+        <br>
+        <h3>Fuentes de letras</h3>
+
+        <p class="fuente">Todo el contenido esta en comentarios dentro del archivo .css</p>
+    </body>
+</html>

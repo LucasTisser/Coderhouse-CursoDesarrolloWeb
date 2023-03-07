@@ -1,0 +1,22 @@
+$color4: aqua;
+$color5: darkred;
+h1 {
+  color: red;
+}
+
+// este comentario con dos barras solo se mostrara en Sass y no se compilara para css
+
+/* este comentario se compila para css */
+
+body {
+  background-color: $color4;
+}
+
+h2 {
+  font-size: 40px;
+  span {
+    color: $color5;
+  }
+}
+
+// con @import llamo a otros archivos

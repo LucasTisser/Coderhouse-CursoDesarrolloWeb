@@ -1,0 +1,36 @@
+/* este comentario ocupa varias lineas,
+    y utiliza el formato tradicional de CSS.
+    Su contenido aparecera en el archivo CSS compilado */
+body {
+  background-color: crimson;
+}
+
+header {
+  height: 200px;
+  width: 100%;
+  background-color: violet;
+  font-family: sans-serif;
+}
+
+.header__h1--color {
+  color: blue;
+}
+
+.header__h1 {
+  background-color: violet;
+  text-align: center;
+}
+
+.header--color {
+  color: yellow;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+h1 span {
+  color: yellow;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,29 @@
+.container {
+  background-color: aqua;
+}
+.container-fluid {
+  background-color: darkcyan;
+}
+.color1 {
+  background-color: darkturquoise;
+}
+.color2 {
+  background-color: rgb(216, 4, 4);
+}
+.color3 {
+  background-color: darkred;
+}
+.color4 {
+  background-color: darkorange;
+}
+.color5 {
+  background-color: beige;
+}
+.color6 {
+  background-color: blanchedalmond;
+}
+
+.sec {
+  height: 500px;
+  width: 500px;
+}

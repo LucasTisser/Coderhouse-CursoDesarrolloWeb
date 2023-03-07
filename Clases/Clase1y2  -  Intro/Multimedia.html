@@ -1,0 +1,49 @@
+<h1>Multimedia</h1>
+
+<h2>Mi primera imagen</h2>
+
+<img src="imgprueba.jpg" alt="Prueba" />
+
+<p>
+  la ubicacion se coloca en <b>src</b> <br />
+  para acceder a las carpetas solo agregar el nombre de la carpeta y luego una /
+  , sumado al nombre y extension de la imagen <br />
+  el atributo <b>alt</b> funciona para referenciar el contenido de la imagen,
+  video, audio
+</p>
+<br />
+
+<h2>Mi primer video</h2>
+
+<video src="ubicacion/video.mp4" controls>
+  <source src="Ubicacion/video.ogg" type="video/mp4" preload="audio" />
+</video>
+
+<p>
+  colocar la ubicacion raiz del video en <b>src</b> <br />
+  el video lleva un atributo llamado <b>controls</b> para agregar botones de
+  reproduccion, tambien se puede mencionar como <b>controls autoplay</b> para
+  que cuando se visualize se reproduzca automaticamente, asi tambien en el
+  <b>audio.</b>. <br />
+  La etiqueta <b>source</b> dentro de la etiqueta video, funciona para subir
+  otra extension del mismo video en caso de que el video no se pueda reproducir
+  en la extension por defecto, dando mas opciones para los navegadores antiguos.
+  <br />
+  El atributo <b>preload</b> significa que el audio o video se va a ir
+  descargando automaticamente <br />
+</p>
+
+<h2>Mi primer Audio</h2>
+
+<audio src="Ubicacion/audio.mp3">
+  Espacio para hacer mencion cuando el video o audio no es soportado por el
+  navegador
+</audio>
+
+<p>Colocar ubicacion en <b>src</b> <br /></p>
+
+<h2>Etiqueta iframe</h2>
+
+<iframe src="" frameborder="0"></iframe>
+
+<p>se puede agregar un mapa o video de paginas externas</p>

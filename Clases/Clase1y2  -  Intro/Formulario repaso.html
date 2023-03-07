@@ -1,0 +1,231 @@
+<h1>Formulario</h1>
+
+<p>Para que funcione la etiqueta "form" se necesita de 3 atributos para que funcione</p>
+
+<ol>
+    <li>action: documento que se encarga de recibir los datos y procesarlos</li>
+    <li>method: la forma en que sera enviada la informacion.existen dos metodos, GET y POST</li>
+    <li>enctype: Como se codificaran los contenidos</li>
+</ol>
+
+<h2>Action</h2>
+
+<p>en este atributo indicaremos cual es el archivo que recibe y procesa los datos.debe ser de lenguaje (PHP/asp/JSP).</p>
+
+<h2>Metod</h2>
+
+<p>Forma en la que se recopilan y envian los datos,existen dos metodos comunes en el HTML</p>
+<ol>
+    <li>GET: La informacion viajara por la barra de direcciones a continuacion del nombre del archivo</li>
+    <li>POST:la informacion viajara junta a los encabezados del HTML (sera "invisible")</li>
+</ol>
+
+<p>Por defecto (si no se indica) es GET</p>
+
+<h2>Ingreso de texto</h2>
+
+<p>Existen 3 tipos de controles generales para el ingreso de texto:
+    <ol>
+        <li>cajas de texto de una sola linea (no acepta enter)</li>
+        <li>cajas para el ingreso de password (contenido invisible)</li>
+        <li>Cajas para contenido multilinea. Puede ser una o muchas lineas</li>
+    </ol>
+</p>
+
+<h3>atributo "name"</h3>
+
+<p>Todos los controles de formulario deben tener un nombre, que se indica con el atributo "name" <br> Con ese nombre despues se accede a su valor en el archivo indicado en el "action". un control sin name no se envia</p>
+
+<h3>control de formulario: "input"</h3>
+
+<p> elemento tiene multiples propositos segun el valor que tome el atributo "type". Los posibles son : 
+    <ol>
+        <li>type "text"</li>
+        <li>type "Email"</li>
+        <li>type "password"</li>
+        <li>type "number"</li>
+        <li>type "date" (calendario)</li>
+        <li>type "file" (Subir archivo)</li>
+    </ol>
+    Atributo <b>placeholder</b> : texto de ayuda para el usuario <br>
+    atributo <b>required</b> : Campo obligatorio para enviar el formulario. 
+</p>
+
+<form action="">
+    Texto
+    <input type="text" name="Texto"> <br>
+    Email
+    <input type="email" name="Mail"><br>
+    Password
+    <input type="password" name="contraseña" placeholder="Ingrese su contraseña"><br>
+    number
+    <input type="number"> <br>
+    date
+    <input type="date"> <br>
+    File 
+    <input type="file"> <br>
+</form>
+
+<h2> "Textarea"</h2>
+
+<p>Es un campo con multriples lineas de texto ofrece los siguientes atributos:</p>
+
+<ol>
+    <li>cols: indica la cantidad de caracteres que podra tener a lo ancho.</li>
+    <li>rows: indica la cantidad de lineas de texto</li>
+</ol>
+
+<textarea name="Prueba" id="" cols="50" rows="5"></textarea>
+
+<h2>Botones</h2>
+
+<p>Los botones disparan las acciones del formulario <br> Hay 3 tipos de botones <br>
+
+    <ul type="square">
+        <li>el que envia los datos al archivo indicado como action</li>
+        <li>el que vacia todo lo ingresado y resetea los campos</li>
+        <li>el que no hace nada y esta pensado para usarse con javascript</li>
+    </ul>
+    Todos los botones son etiquetas "input", Con distintos tipos de type <br>
+    el boton debe estar dentro de "form"<br>
+
+    <h4>Atributo "value"</h4>
+    representa la etiqueta del boton, la cual es normalmente mostrada por los navegadores dentro de este. <br>
+</p>
+
+<form>
+    <input type="submit" value="Enviar formulario"/> <br>
+    <input type="reset" value="Limpiar formulario"/> <br>
+    <input type="button" value="Sin acciones"/>
+</form>
+ 
+<div>
+    <h2>Controles de seleccion</h2>
+
+<p>Opciones que ofrece el programador para el usuario.El dato que nos llega al elegir una opcion se define desde el atributo "value"<br>
+    Existen 3 grupos de controles de seleccion: <br>
+    <ul type="square">
+        <li>Botones de radio: Solo se puede elegir una opcion</li>
+        <li>Casillas de chequeo: De toda la lista de opciones, el usuario puede elegir una,todas o ninguna opcion </li>
+        <li>Menu desplegable: Solo se puede elegir una opcion</li>
+    </ul>
+    <h3>atributo "value"</h3>
+    En este caso es el valor que se enviara al enviarse el formulario
+</p>
+</div>
+
+<h3>Botones de radio</h3>
+
+<form action="">
+    <div>Hombre</div>
+    <input type="radio" name="sexo" value="hombre">
+    <div>Mujer</div>
+    <input type="radio" name="sexo" value="mujer">
+</form>
+
+<p><b>Detalle importante, para que el usuario pueda elegir una sola opcion basta con elegir el mismo valor al atributo name</b></p>
+
+<h3>Casillas de chequeo</h3>
+
+Necesita un value distinto para cada opcion, se usa con el atributo <b>checkbox</b>
+
+<form>
+    <div>Acepta terminos y condiciones</div>
+    <input type="checkbox" name="Acepta" value="1">
+    <input type="checkbox" name="Acepta2" value="2">
+</form>
+<hr>
+
+<h2>etiqueta "label"</h2>
+
+ <p>la etiqueta <b>label</b> define formalmente a cada elemento de un formulario,esta etiqueta es de mucha ayuda para generar un formulario accesible. el principal <b>atributo</b> de la etiqueta label es <b>for</b>, quen va a referenciar a label con su elemento del formulario.el valor del atributo for debe ser igual al valor del atributo id o name del elemento</p>
+
+ <form>
+     <label for="nombre_apellido">Nombre:</label>
+     <input type="text" name="nombre_apellido">
+ </form>
+
+ <h3>menu desplegable</h3>
+
+ <p>es el llamado combo-box, selector o menu. se necesitan dos elementos distintos: <br>
+para insertar el menu se usa la etiqueta <b>select</b>, que abre y cierra(pero estara vacio) <br>
+Dentro va una etiqueta <b>option</b> que abre y cierra por cada opcion a mostrar. <br>
+El <b>select</b> lleva el atributo "name" (los "option" no) <br>
+los <b>option</b> llevan el "value" (el select no) <br>
+Si no hay "value", se usa el texto interior.</p>
+
+<form>
+    <select name="Prueba">
+        <option value="sexo">Hombre</option>
+        <option value="sexo">Mujer</option>
+        <option value="sexo">Sin especificar</option>
+    </select>
+</form>
+
+<h2>Conjunto de campo</h2>
+<p>las etiquetas <b>fieldset</b> tiene como objetivo crear grupos de elementos del formulario que poseen un mismo proposito. La etiqueta <b>legend</b>, define formalmente el proposito del elemento fieldset.se estructura de la siguiente manera: <br></p>
+<ul>
+    <li><b>fieldset</b></li>
+    <li>legend</li>
+</ul>
+
+<form>
+    <fieldset>
+        <legend>Talle de remera</legend>
+        <select name="Prueba">
+            <option value="sexo">Hombre</option>
+            <option value="sexo">Mujer</option> 
+            <option value="sexo">Sin especificar</option>   
+        </select> <br>
+        <label for="nombre_apellido">Nombre:</label>
+            <input type="text" name="nombre_apellido"> <br>
+            <label for="sexo">Hombre</label> 
+    <input type="radio" name="sexo" value="hombre"> <br>
+    <label for="sexo">Mujer</label> 
+    <input type="radio" name="sexo" value="mujer">
+    </fieldset>
+</form>
+
+
+<h2>Mas input</h2>
+
+<ul>
+    <form>
+        <li>
+            Type "range" : elegir un rango deseado, se puede agregar los siguientes atributos
+            <ul type="square">
+                <li>Atributo <b>min</b> : Minimo de rango</li>
+                <li>Atributo <b>max</b> : maximo de rango</li>
+                <li>Atributo <b>step</b> : cuanto avanzara en medidor de rango</li>
+                <input type="range" min="10" max="100" step="1">
+            </ul> 
+        </li>
+        <li>
+            Type "datetime-local" <br>
+            <input type="datetime-local" name="Tiempo">
+        </li>
+        <li>
+            Type "month", Type "week" y Type "time" <br>
+            <input type="month" name="Tiempo"> <br>
+            <input type="week" name="Tiempo"> <br>
+            <input type="time" name="Tiempo"> <br>
+        </li>
+        <li>
+            Type "color" <br>
+            <input type="color" name="Prueba">
+        </li>
+        <li>
+            Type "search"(busqueda) <br>
+            <input type="search">
+        </li>
+        <li>
+            Type "tel"
+            <input type="tel">
+        </li>
+        <li>
+            type "url"
+            <input type="url">
+        </li>
+    </form>
+    
+</ul>

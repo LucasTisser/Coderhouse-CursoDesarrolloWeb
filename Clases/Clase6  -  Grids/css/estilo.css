@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  background-color: aqua;
+
+  display: grid;
+  /* define al elemento padre que vamos a trabajar sobre sus hijos con grid*/
+
+  grid-template-columns: repeat(4, 1fr);
+  /* fr es una unidad fraccionaria de medida, divide elementos de igual manera. Y con grid-template-columns determino al codigo que colocare columnas, se pueden definir otras medidas tambien, ademas podemos colocar un repeat() , en donde dentro del parentesis ira, las columnas que deseamos, separado por coma, y la unidad de ellas. EJ = grid-template-columns: repeat(4, 1fr);*/
+
+  grid-template-rows: 200px 150px 100px;
+  /* con grid-template-rows , definimos la medida y las filas que deseemos, en este caso si no se cuenta con una medida definida, esta no aplicara medidas relativas */
+
+  grid-column-gap: 20px;
+  /* define el espacio entre columnas */
+
+  grid-row-gap: 20px;
+  /* define el espacio entre filas */
+
+  grid-gap: 50px;
+  /* define el espacio entre filas y columnas */
+
+  gap: 50px;
+  /* gap puede usarse en flexbox */
+}
+
+.item {
+  background-color: chocolate;
+  border: 2px solid #000;
+  text-align: center;
+  font-size: 25px;
+  /* min-height: 50px; */
+}
+
+#grilla {
+  display: grid;
+  grid-template-areas:
+    "nav header header"
+    "nav productos publicidad"
+    "nav servicios publicidad"
+    "nav footer footer";
+  /* el grid-template-areas se usa para maquetar mi sitio web de manera personalzada, dentro de las "" se coloca una fila. Tambien se puede utilizar para maquetar un area en especial, dentro del maquetado general. */
+
+  grid-template-rows: 100px 1fr 1fr 75px;
+  grid-template-columns: 20% auto 15%;
+}
+.border {
+  border: 1px solid black;
+}
+
+header {
+  grid-area: header;
+  background-color: crimson;
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  background-position: center;
+
+  /* con grid-area vamos a vincular el nombre que coloquemos dentro de la etiqueta para utilizar en "grid-template-areas" y poder organizar mi maquetado */
+}
+footer {
+  grid-area: footer;
+  background-color: coral;
+}
+section#productos {
+  grid-area: productos;
+}
+section#servicios {
+  grid-area: servicios;
+}
+nav {
+  grid-area: nav;
+  background-color: darkcyan;
+}
+aside {
+  grid-area: publicidad;
+}

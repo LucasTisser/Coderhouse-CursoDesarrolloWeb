@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap");
+
+/* font-family: 'Moon Dance', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: chartreuse;
+}
+
+.logo {
+  background-image: url(../img/logo.png);
+  height: 70px;
+  width: 70px;
+  background-size: cover;
+}
+
+.jumbotron {
+  background-image: url(../img/fondo.jpg);
+  color: #fff;
+  background-position: center;
+  background-size: cover;
+  text-shadow: 0 0 5px #222;
+  border-radius: 0;
+  margin: 0%;
+}
+
+.jumbotron .btn-success {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+h2 {
+  background-color: rgb(45, 134, 64);
+  text-align: center;
+  color: #fff;
+  font-family: "Moon Dance", cursive;
+  font-size: 40px;
+}
+
+.nosotros {
+  min-height: 500px;
+  color: #fff;
+}
+
+.imagen1 {
+  background-image: url(../img/fondo.jpg);
+  height: 500px;
+}
+
+.item {
+  background-color: rgb(45, 134, 64);
+  min-height: 300px;
+  border: 2px solid #333;
+}
+
+h4,
+p {
+  color: #fff;
+}
+
+h4:hover {
+  color: orchid;
+}
+
+.servicios {
+  background-image: url(../img/precio-bajo.png);
+  background-size: contain;
+  height: 200px;
+  background-repeat: no-repeat;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* a:hover {
+    color:rgb(0, 47, 10)
+} */
+
+a:active {
+  color: rgb(128, 0, 0);
+}
+
+/* con active se pondra del color seleccionado mientras este manteniendo el click izquierdo */
+
+*::selection {
+  color: rosybrown;
+}
+
+/* el texto que seleccione con el cursor tendra ese color de cambio */
+
+p::first-letter {
+  color: salmon;
+  font-size: 100px;
+}
+
+/* con first letter doy enfasis y cambios a mi primera letra */
+
+p::first-line {
+  color: rgb(46, 117, 139);
+  font-size: 100px;
+}
+
+/* con first line, la primera linea tendra enfasis */
+
+.servicios:nth-child(3) {
+  color: sienna;
+}
+
+p:focus {
+  color: springgreen;
+}
+
+p::placeholder {
+  color: rgb(128, 0, 0);
+}
+
+p:not(.servicios) {
+  background-color: brown;
+}
+
+/* con not discrimino un contenedor para que no obtenga los estilos que aplico para los demas contenedores del contenedor padre, en este caso la sintaxis es la siguiente, p seria el contenedor padre y servicios seria el contenedor hijo */

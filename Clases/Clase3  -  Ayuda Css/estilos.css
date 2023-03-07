@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@900&display=swap");
+
+* {
+  margin: 0;
+  /* margin se utiliza para los margenes y espacios al borde del navegador
+
+    Padding se utiliza para los espacios entre contenido del sitio*/
+
+  /* padding: 0%;  */
+}
+
+body {
+  /* background-color: rgba(88, 193, 13, 0.712) */
+
+  /*background-image: url (asd.jpg) coloca una imagen de fondo 
+    /* background-repeat: no-repeat (no repite la imagen de fondo)
+                            repeat-x (repite solo en eje x)
+                            repear-y (repite solo en eje y)
+                            round
+                            space   
+                            
+    background-position: bottom center (centro)
+                        top right (arriba derecha)
+                         
+    background-size: cover (se escala la imagen de fondo)
+                     contain
+                     400px 100px (a modo de ejemplo, puedo indicar auto)
+
+    background-attachment: fixed (permite que la imagen de fondo quede estatica mientras el contenido se va moviendo)
+
+    /* background-color funciona para darle un fondo de color al elemento */
+
+  /* background: radial-gradient(white,green,pink) */
+
+  /* background: radial-gradient funciona para darle un fondo en forma de circulo al fondo */
+
+  background: linear-gradient(white, blue, yellow, green, red);
+
+  /* backgroun: linear-gradient funciona para darle un fondo gradual y lineal */
+}
+
+/* h2 {
+    color:  
+    Los colores pueden expresarse en colores en ingles, hexadecimal, con RGB, con RGBa (la "a" indica transparencia)
+} */
+
+.imglista {
+  /* list-style-type: XXXXX ; funciona para estilos de listas */
+
+  /* list-style-image: url( XXX ); funciona para colocar imagen en lugar de los tipos de style-type , tanto para img descargadas o img de internet, esta ultima va entre comillas ( "" )*/
+
+  /* list-style-position: inside o outside == significa que la lista estara mas dentro o fuera del medio de pagina */
+
+  list-style-type: decimal-leading-zero;
+}
+
+h3 {
+  /* font-size: 50px; funciona para dar tamaño a la fuente, se utiliza unidad de medida, Recomendacion, usar medidas relativas (como los % ) y no medidas absolutas(como los px) */
+
+  /* font-style: oblique da un estilo a la fuente */
+
+  font-family: "Be Vietnam Pro", sans-serif, cursive;
+  /* Define el tipo de fuente que quiero mencionar.
+    Si quiero mencionar una fuente de internet, se menciona por encima de todo el     .css un @import , sin la etiqueta style, y luego en donde quiero colocarlo se pega el codigo como en el ejemplo*/
+
+  font-weight: 900;
+  /* font-weight indica el grosor de la letra */
+
+  letter-spacing: 3px; /* indica espacio entre letras*/
+
+  word-spacing: 50px; /* indica espacio entre palabras*/
+
+  text-align: center; /* posicionamiento de los textos*/
+
+  text-decoration: underline; /* decora el texto*/
+
+  line-height: 150px; /* indica el tamaño de la seleccion de texto*/
+}
+
+.fuente {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  word-spacing: 20px;
+
+  text-align: center;
+}

@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: orange;
+}
+
+.fondo {
+  height: 100vh;
+  background-image: linear-gradient(red, orange); /* por defecto */
+
+  background-image: linear-gradient(
+    to left,
+    red,
+    orange
+  ); /* con direccion a la izquierda */
+
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange
+  ); /* con direccion a la derecha */
+
+  background-image: linear-gradient(
+    to top,
+    red,
+    orange
+  ); /* con direccion inferior a superior */
+
+  background-image: linear-gradient(
+    to bottom,
+    red,
+    orange
+  ); /* con direccion de superior a inferior */
+
+  background-image: linear-gradient(
+    to bottom,
+    red,
+    orange,
+    yellow
+  ); /* se pueden agregar varios colores */
+
+  background-image: linear-gradient(
+    to bottom,
+    #ff0000,
+    orange,
+    rgba(247, 255, 30, 0.9),
+    rgba(0, 0, 0, 0.9)
+  ); /* se pueden agregar degradados con rgba() */
+
+  background-image: linear-gradient(
+    to bottom right,
+    red,
+    orange,
+    yellow
+  ); /* direccion superior a inferior derecha (esquina) */
+
+  background-image: linear-gradient(
+    to top left,
+    red,
+    orange,
+    yellow
+  ); /* direccion de inferior a superior izquierda */
+
+  /* se pueden agregar medidas */
+  background-image: linear-gradient(70deg, red, orange, yellow);
+  background-image: linear-gradient(320deg, red, orange, yellow);
+  background-image: linear-gradient(220deg, red, orange, yellow);
+  background-image: linear-gradient(360deg, red, orange, yellow);
+
+  background-image: linear-gradient(red, violet 90%, yellow);
+  /* se puede agregar porcentajes o otras medidas a los colores y decirles cuanto ocupara ese color */
+
+  /* se puede tambien agregar una imagen y darle un efecto de transparencia 
+        con background-image: url() y luego un background-image: linear-gradient () */
+
+  /* ejemplos de fondos de pagina */
+
+  background: repeating-linear-gradient(
+    45deg,
+    red,
+    red 5px,
+    white 5px,
+    white 10px
+  );
+  background: repeating-linear-gradient(-135deg, red, blue 20%, white 50%);
+  background: repeating-radial-gradient(red, blue 10%, white 40%);
+
+  background-image: radial-gradient(blue, green, orange);
+  background: radial-gradient(pink, red, orange);
+  background: radial-gradient(pink, red 70%, orange);
+  background: radial-gradient(rgb(245, 29, 177), red 70%, #ed9b21);
+}

@@ -1,0 +1,144 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "item1 item2 item3 item3"
+    "item1 item4 item5 item6"
+    "item7 item4 item8 item8";
+  background-color: yellow;
+
+  grid-template-rows: 100px 100px 150px;
+
+  grid-gap: 10px;
+  padding: 10px;
+  height: 100vh;
+}
+
+.item1 {
+  grid-area: item1;
+  background-color: turquoise;
+}
+
+.item2 {
+  grid-area: item2;
+  background-color: yellowgreen;
+}
+
+.item3 {
+  grid-area: item3;
+  background-color: tomato;
+}
+
+.item4 {
+  grid-area: item4;
+  background-color: blue;
+  background-image: url(../img/comida1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item5 {
+  grid-area: item5;
+  background-color: chocolate;
+}
+
+.item6 {
+  grid-area: item6;
+  background-color: darkgrey;
+}
+
+.item7 {
+  grid-area: item7;
+  background-color: darkmagenta;
+}
+
+.item8 {
+  grid-area: item8;
+  background-color: darkred;
+  background-image: url(../img/habitacion1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: darkviolet;
+}
+
+/* alineacion por celdas de parte del contenedor */
+
+/* alineacion horizontal */
+
+/* justifi-items:
+                    center (centra en cuanto al eje x)
+                    end (derecha)
+                    start (izquierda)
+                    strech (se estira en el eje x, hay que eliminar las medidas)
+para que funcione debemos quitarle las dimensiones a los items */
+
+/* alineacion vertical */
+
+/* align-items: 
+                center (centra en cuanto al eje y )
+                flex-end (parte inferior )
+                flex-start (parte superior )
+                stretch (se estira en el eje y)*/
+
+/* alineacion por parte del contenedor */
+
+/* para que funcione debemos quitarle las dimensiones a los items
+
+para utilizar estas propiedades no debes usar align-items y justify-items*/
+
+/* alineacion de forma HORIZONTAL del conjunto de items */
+
+/* justify-content: 
+                    center (todo el contenido centrado sobre el eje x)
+
+                    flex-end (todo el contenido a la derecha del eje x)
+
+                    flex-start (todo el contenido a la izquierda del eje x)
+
+                    space-around (todo el contenido espaciado entre si)
+
+                    space-between (todo el contenido espaciado entremedio sin margen)
+
+                    space-evenly (todo el contenido espaciado por igual) */
+
+/* alineacion de forma VERTICAL del conjunto de items */
+
+/* align-content:
+                    center (todo el contenido centrado sobre el eje y)
+
+                    flex-end (todo el contenido a la posicion inferior)
+
+                    flex-start (todo el contenido a la posicion superior)
+
+                    space-around (todo el contenido espaciado entre si)
+
+                    space-between(todo el contenido espaciado entremedio sin margen)
+
+                    space-evenly (todo el contenido espaciado por igual)*/
+
+/* propiedades de los mismos items desde los items */
+
+/* alineacion eje y */
+
+/* align-self:
+                start (posicion superior)
+                end (posicion inferior)
+                center (medio)
+                stretch (sin dimensiones, estira en cuanto al eje y)*/
+
+/* alineacion eje x */
+
+/* justify-self:
+                center (centro)
+                end (derecha)
+                start (izquierda)
+                stretch (sin dimensiones, estira en cuanto al eje y)*/

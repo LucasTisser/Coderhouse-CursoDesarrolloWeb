@@ -1,0 +1,17 @@
+h1 {
+  color: red;
+}
+
+/* este comentario se compila para css */
+body {
+  background-color: aqua;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h2 span {
+  color: darkred;
+}
+/*# sourceMappingURL=estilos.css.map */

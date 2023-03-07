@@ -1,0 +1,45 @@
+body {
+  background-color: aqua;
+}
+
+.header__img {
+  border: 2px solid yellow;
+  /* border: tamano estado color */
+}
+
+.header__img--size {
+  height: auto;
+  width: auto;
+}
+
+div {
+  width: 1500px;
+  height: 300px;
+  background-color: orange;
+  border-width: 10px; /* mide lo grueso del borde */
+  border-color: black;
+  border-style: solid; /* define un marco al borde */
+  border: 10px dotted black; /* border : width style color */
+  border-left: 5px solid red; /* si quiero ser mas especifico */
+  font-size: 35px;
+  overflow: scroll; /* overflow se utiliza para los textos grandes que estan en contenedores pequeños, de tal manera que no alcance el espacio del texto para el contenedor, cuenta con 4 valores :
+                                                    visible (Por defecto)     
+                                                    scroll (agrega una barra de navegacion)
+                                                    hidden (oculta el contenido)
+                                                    auto (si es necesario agrega barra de nav) */
+}
+
+/* la etiqueta display se utiliza para cambiar de una etiqueta de bloque a una etiqueta de linea, asi tambien al reves, y tambien a la etiqueta se la puede modificar para que sea de bloque y linea, se utiliza 3 valores: 
+                                                                            inline
+                                                                            block
+                                                                            inline-block  */
+
+/* etiqueta position contiene los siguientes valores : 
+                                                            sticky (el elemento queda pegado cuando se pasa por el)
+                                                            relative ( el elemento se arrastra en cuando a las medidas que se mencione)
+                                                            fixed (el elemento queda fijado en la ubicacion y se arrastra por el sitio)
+                                                            absolute (el elemento queda fijado a cierta ubicacion del sitio)*/
+
+/* La etiqueta z-index hace mencion a las capas de los elementos, el valor 1 indica el fondo, cuanto mayor, mas por encima estara */
+
+/* margin : top right buttom left . forma reducida, aplica al padding */

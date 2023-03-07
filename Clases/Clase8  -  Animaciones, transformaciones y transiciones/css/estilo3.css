@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  font-family: cursive;
+  background-color: green;
+  animation-name: efecto; /* dar nombre a una animacion */
+
+  /* animation-iteration-count: infinite; */ /* deja que la animacion de reproduzca infinitamente */
+
+  animation-iteration-count: 2; /* cantidad de veces que se repetira la animacion */
+
+  animation-timing-function: ease; /* por defecto*/
+
+  /*  ease-in; mas rapido al final *
+                              
+                              /*  ease-out; mas rapido al principio */
+
+  /* ease-in-out; mas rapido en el medio */
+
+  animation-duration: 5s; /*tiempo que dura la animacion */
+  animation-delay: 5s; /* es lo que tarda en iniciar la animacion ni bien termina de cargar el sitio */
+}
+
+@keyframes efecto {
+  /* defino los fotogtamas y los efectos que tendre en la animacion, importantisimo al momento de crear una animacion */
+  0% {
+    width: 100px;
+  }
+  10% {
+    background-color: yellow;
+  }
+  100% {
+    width: 500px;
+    background-color: blue;
+  }
+}
+
+body {
+  background-color: beige;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: seagreen;
+  text-shadow: 5px 5px 5px #ccc;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-delay: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 1; /* texto solido */
+  }
+  50% {
+    opacity: 0; /* texto transparente */
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#cuadrado {
+  height: 150px;
+  width: 150px;
+  background-color: forestgreen;
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+  color: white;
+  animation-name: circulo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circulo {
+  0% {
+    border-radius: 0;
+    opacity: 0;
+  }
+  50% {
+    border-radius: 30px;
+    transform: translateX(300px);
+    background-color: red;
+    opacity: 1;
+  }
+  100% {
+    border-radius: 75px;
+    transform: translateX(300px);
+    transform: translateY(200px);
+  }
+}
